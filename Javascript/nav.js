@@ -1,3 +1,4 @@
+// Creation d'un MENU HAMBURGER :
 const hamburgerBtn = document.querySelector(".nav__toggler");
 const navigation = document.querySelector(".header__nav");
 
