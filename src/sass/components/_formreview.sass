@@ -1,0 +1,49 @@
+@use "../utils/_main" as utils
+@use "../utils/_function" as functions
+
+.Addreview
+    width: 100vw
+    @include utils.flex($direction: column, $align: center, $justify: center)
+    &__title
+        width: 100%
+        @extend %title
+        text-transform: uppercase
+        @include utils.flex($direction: column, $align: center, $justify: center)
+        margin-bottom: 3rem
+    &__form
+        @include utils.flex($direction: column, $align: center, $justify: center)
+        gap: 3rem
+        margin-bottom: 3rem
+    &__input
+        background-color: transparent
+        @extend %paragraphe2
+        font-weight: 700
+        border: none
+        border-bottom: 1px solid utils.$secondary
+        height: 2.7rem
+        width: 17rem
+        gap: 2rem
+    &__inputnone
+        display: none
+    &__submit
+        background-color: utils.$primary
+        border: none
+        height: 2rem
+        width: 8rem
+        border-radius: 10px
+        @extend %paragraphe
+        color: utils.$secondary
+        &:hover
+            cursor: pointer
+            transform: scale(1.1)
+    &__textarea
+        background-color: transparent
+        @extend %paragraphe2
+        font-weight: 700
+        width: 35rem
+        height: 10rem
+        resize: none
+
+@media only screen and (max-width: 650px)
+    .Addreview__textarea
+        width: 22rem

@@ -1,0 +1,35 @@
+@use "../../utils/_main" as utils
+@use "../../utils/_function" as functions
+
+.createAdd
+    height: 95vh
+    background-image: url(https://kawsar.design/wp-content/uploads/2023/02/BG-Tx-1.svg)
+    width: 100vw
+    @include utils.flex($direction: column, $align: center, $justify: center)
+    &__title
+        @extend %title
+        text-transform: uppercase
+        margin: 45px
+    &__form
+        @include utils.flex($direction: column, $align: center, $justify: center)
+        gap: 3rem
+    &__input
+        background-color: transparent
+        @extend %paragraphe2
+        font-weight: 700
+        border: none
+        border-bottom: 1px solid utils.$secondary
+        height: 2.7rem
+        width: 17rem
+        gap: 2rem
+    &__submit
+        background-color: green
+        border: none
+        height: 2rem
+        width: 8rem
+        border-radius: 10px
+        @extend %paragraphe
+        color: utils.$secondary
+        &:hover
+            cursor: pointer
+            transform: scale(1.1)

@@ -1,0 +1,38 @@
+@use "../utils/_main" as utils
+@use "../utils/_function" as functions
+
+.sidenav 
+    height: 100%
+    width: 300px
+    position: fixed
+    z-index: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 1.5rem
+    top: 0
+    left: 0
+    background-color: utils.$background
+    overflow-x: hidden
+
+.sidenav a 
+    text-decoration: none
+    font-size: 1.3rem
+    color: utils.$secondary
+    display: flex
+
+
+.sidenav a:hover 
+    color: utils.$primary
+
+
+.sidenav hr
+    width: 100%
+
+
+@media screen and (max-height: 450px) 
+    .sidenav
+        padding-top: 15px
+    .sidenav a
+        font-size: 18px

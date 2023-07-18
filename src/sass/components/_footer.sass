@@ -1,0 +1,66 @@
+@use "../utils/_main" as utils
+@use "../utils/_function" as functions
+
+
+.footer 
+    position: relative
+    padding: 20px
+    &::before
+        content: ""
+        background-image: url("../../assets/Images/Images/footer.jpg")
+        background-size: cover
+        background-position: center
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0.1
+    &__categories 
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 30px
+        z-index: 1
+        position: relative
+    &__logo
+        @include utils.flex($direction: column, $align: center, $justify: center)
+        h1
+            font-family: utils.$font-logo
+            font-style: italic
+            margin: 0
+            color: utils.$primary
+    &__logop
+        margin-left: 5px
+        margin-top: 0
+        @extend %paragraphe2
+    &__garage
+        @include utils.flex($direction: column, $align: center, $justify: center)
+        flex: 1
+    &__garageP
+        @extend %paragraphe2
+    &__title
+        @extend %paragraphe2
+        text-decoration: underline
+    &__hour
+        flex: 1
+        min-width: 160px
+    &__hourLi
+        @extend %paragraphe2
+    &__hourUl
+        padding: 0
+    &__info
+        flex: 1
+        min-width: 120px
+    &__infoLink
+        @include utils.flex($direction: column, $justify: center, $align: flex-start)
+        gap: 1rem
+    &__follow
+        flex: 1
+    &__followLink
+        @include utils.flex($direction: column, $justify: center, $align: flex-start)
+        gap: 1rem
+    &__followP
+        @extend %paragraphe2
+
+@media only screen and (max-width: 700px)
