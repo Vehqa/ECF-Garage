@@ -34,7 +34,7 @@ class EmployeController extends Controller
         $annoncesModel = new AnnoncesModel();
         // Appeler la méthode create en passant les données
         $result = $annoncesModel->create($data);
-        session_start();
+        
         // Définir la valeur de $_SESSION['success'] en fonction du résultat
         if ($result) {
             $_SESSION['success'] = "L'annonce a été créée avec succès.";
@@ -95,7 +95,7 @@ class EmployeController extends Controller
             ];
             // méthode update : l'ID de l'annonce + Data
             $result = $annoncesModel->update($id_car, $data);
-            session_start();
+            
             if ($result) {
                 $_SESSION['success'] = "L'annonce a été mise à jour avec succès.";
             } else {

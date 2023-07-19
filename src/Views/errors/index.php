@@ -15,7 +15,7 @@
         <section class="error">
             <h1 class="error__title">Erreur 404 - Page introuvable</h1>
             <p class="error__p">Désolé, la page que vous recherchez est introuvable.</p>
-            <a class="error__link" href="/main">Retour a l'Accueil</a>
+            <a class="error__link" href="/">Retour a l'Accueil</a>
         </section>
     </body>
 </html>

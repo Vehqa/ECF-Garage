@@ -80,7 +80,7 @@
     <!-- Formulaire AVIS-->
     <div>
         <h2 class="Addreview__title">Vous aussi laissez un avis</h2>
-        <form class="Addreview__form" action="main/create" method="post" enctype="multipart/form-data">
+        <form class="Addreview__form" action="/create" method="post" enctype="multipart/form-data">
             <input placeholder="Prénom" class="Addreview__input" type="text" name="name_review" id="name" required>
             <input placeholder="Nom" class="Addreview__input" type="text" name="surname_review" id="surname" required>
             <input placeholder="Note / 5" class="Addreview__input" type="Number" name="grade_review" id="grade" required>
@@ -117,7 +117,7 @@
                 <div class="footer__info">
                     <p class="footer__title">Infos Utiles :</p>
                     <div class="footer__infoLink">
-                        <a href="/main">Accueil</a>
+                        <a href="/">Accueil</a>
                         <a href="https://goo.gl/maps/h6nH3d2LyzczdU1i8">Google Maps</a>
                         <a href="/contact">Contact</a>
                     </div>

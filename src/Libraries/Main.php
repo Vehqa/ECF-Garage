@@ -20,12 +20,12 @@ class Main
     public function start()
     {
         // On retire le dernier slash de l'URL
-        $uri = rtrim($_SERVER['REQUEST_URI'], '/');
+        $uri = ($_SERVER['REQUEST_URI']); 
 
         // Redirige si l'URL se termine par un slash
         if ($uri !== $_SERVER['REQUEST_URI']) {
             http_response_code(301);
-            header('Location: ' . $uri);
+            header('Location: ');
             exit();
         }
 
@@ -35,14 +35,14 @@ class Main
         // ROUTES :
 
         //Main 
-        if ($uri === '/main') {
+        if ($uri === '/') {
             $controller = new MainController();
             $controller->index();
-        } elseif ($uri === '/main') {
+        } elseif ($uri === '/') {
             $controller = new MainController();
             $reviews = $controller->getAcceptedReviews();
             $controller->index($reviews);
-        } elseif ($uri === '/main/create') {
+        } elseif ($uri === '/create') {
             $controller = new MainController();
             $controller->createReview();
 

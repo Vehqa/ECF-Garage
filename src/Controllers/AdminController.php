@@ -125,7 +125,7 @@ class AdminController extends Controller
             ];
             // méthode update : l'ID de l'annonce + Data
             $result = $annoncesModel->update($id_car, $data);
-            session_start();
+            
             if ($result) {
                 $_SESSION['success'] = "L'annonce a été mise à jour avec succès.";
             } else {
@@ -162,7 +162,7 @@ class AdminController extends Controller
             ];
              // méthode update : l'ID de l'annonce + Data
             $result = $hoursModel->update($id_hour, $data);
-            session_start();
+            
             if ($result) {
                 $_SESSION['success'] = "L'annonce a été mise à jour avec succès.";
             } else {
@@ -191,7 +191,7 @@ class AdminController extends Controller
             $usersModel = new UsersModel();
             // Appeler la méthode create en passant les données
             $result = $usersModel->create($data);
-            session_start();
+            
             // Définir la valeur de $_SESSION['success'] en fonction du résultat
             if ($result) {
                 $_SESSION['success'] = "L'annonce a été créée avec succès.";
@@ -200,12 +200,12 @@ class AdminController extends Controller
             }
             // Redirection ou message
             if ($result) {
-                echo "✅ L'annonce a été créée avec succès, redirection en cours.";
+                echo "✅ L'employe a été créée avec succès, redirection en cours.";
             } else {
                 echo "Erreur lors de la création de l'annonce. Veuillez réessayer, redirection en cours.";
         }
         }
-        header("refresh:2;url=http://ecf_garage.test/admin");
+        header("refresh:2;url=http://ecf_garage.test/adminaccount");
     }
 
         // Appeler la méthode update pour changer les Services
@@ -230,7 +230,7 @@ class AdminController extends Controller
             ];
              // méthode update : l'ID de l'annonce + Data
             $result = $servicesModel->update($id_service, $data);
-            session_start();
+            
             if ($result) {
                 $_SESSION['success'] = "L'annonce a été mise à jour avec succès.";
             } else {
@@ -267,7 +267,7 @@ class AdminController extends Controller
                 ];
         // méthode update : l'ID de l'annonce + Data
         $result = $usersModel->update($id, $data);
-        session_start();
+        
             if ($result) {
             $_SESSION['success'] = "L'annonce a été mise à jour avec succès.";
             } else {

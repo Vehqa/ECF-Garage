@@ -15,7 +15,9 @@ INSERT INTO garage (name_garage, adress_garage, phone_garage)
 
 INSERT INTO ad (id_car, title_car, price_car, model_car, km_car, year_car)
     VALUES
-    (1, 'Mercodeluxe', 65 455, 'merco' 13455, 2005, null);
+    (1, 'Alpha Romeo', 29899, 'Alpha romeo' 21455, 2018, 'upload/64b5481ed2c9c_alpharomeo.jpg'),
+    (2, 'Volkswagen Up', 9899, 'Volkswaagen' 14785, 2019, 'upload/64b5484cf064d_Volkswagenup.jpg'),
+    (2, 'Toyota Yaris', 12789, 'Toyota' 67785, 2016, 'upload/64b5488201b6d_toyotayaris.jpg');
 
 INSERT INTO hour (id_hour, monday_hour, tuesday_hour, wednesday_hour, thursday_hour, friday_hour, saturday_hour, sunday_hour)
     VALUES

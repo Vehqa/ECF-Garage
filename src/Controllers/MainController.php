@@ -46,7 +46,7 @@ class MainController extends Controller
                 $reviewModel = new ReviewModel();
                 // Appeler la méthode create en passant les données
                 $result = $reviewModel->create($data);
-                session_start();
+                
                 // Définir la valeur de $_SESSION['success'] en fonction du résultat
                 if ($result) {
                     $_SESSION['success'] = "L'annonce a été créée avec succès.";
@@ -61,7 +61,7 @@ class MainController extends Controller
                 }
             }
                 // Inclure le fichier CSS en tant qu'en-tête HTTP
-                header("refresh:2;url=http://ecf_garage.test/main");
+                header("refresh:2;url=http://ecf_garage.test/");
         }
 
 }

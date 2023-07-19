@@ -13,7 +13,9 @@
     </head>
     <body>
     <?php include_once ROOT.'/Views/templates/header.php'; ?>
-    <h1 class="main__title">Liste des annonces :</h1>
+    <div class="div__title">
+        <h1 class="main__title">Liste des annonces :</h1>
+    </div>
     <main class="adpage">
         <?php foreach($annonces as $annonce):?>
         <article class="adpage__list">
@@ -60,7 +62,7 @@
                 <div class="footer__info">
                     <p class="footer__title">Infos Utiles :</p>
                     <div class="footer__infoLink">
-                        <a href="/main">Accueil</a>
+                        <a href="/">Accueil</a>
                         <a href="https://goo.gl/maps/h6nH3d2LyzczdU1i8">Google Maps</a>
                         <a href="/contact">Contact</a>
                     </div>

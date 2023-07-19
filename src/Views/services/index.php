@@ -58,7 +58,7 @@
                 <div class="footer__info">
                     <p class="footer__title">Infos Utiles :</p>
                     <div class="footer__infoLink">
-                        <a href="/main">Accueil</a>
+                        <a href="/">Accueil</a>
                         <a href="https://goo.gl/maps/h6nH3d2LyzczdU1i8">Google Maps</a>
                         <a href="/contact">Contact</a>
                     </div>
