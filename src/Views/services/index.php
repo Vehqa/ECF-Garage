@@ -25,7 +25,7 @@
                 <h3 class="services__title"><?= $service->title_service ?><h3>
                 <p class="services__para"><?= $service->description_service ?></p>
                 <hr class="separation">
-                <p class="services__para2">Le prix indiqué si dessous n'est pas nominatif, le prix peux varié a la hausse ou a la baisse selon votre véhicule ou selon les choses a faire.</p>
+                <p class="services__para2">Le prix indiqué si dessous n'est pas nominatif, le prix peut varier à la hausse ou à la baisse selon votre véhicule et son entretien.</p>
                 <p class="services__price">Prix : <?= $service->price_service ?> €</p>
                 <a class="services__link" href="/contact">Nous Contacter</a>
             </div>
