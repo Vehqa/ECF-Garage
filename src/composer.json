@@ -7,9 +7,11 @@
     },
     "authors": [
         {
-            "name": "Vehqa",
+            "name": "Arthur Nectoux | Vehqa",
             "email": "pro.nectoux@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
 }
